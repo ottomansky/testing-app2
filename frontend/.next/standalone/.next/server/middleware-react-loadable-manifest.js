@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"app/(dashboard)/custom/page.tsx -> html2canvas-pro":{"id":6447,"files":["static/chunks/0a2f5824.a3301267df4397ee.js"]}}';
