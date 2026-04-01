@@ -1,54 +1,38 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
-
-# Next.js — ignore build cache but keep standalone (required for Keboola deployment)
-frontend/.next/*
-!frontend/.next/standalone/
-frontend/out/
-
-# Production
-frontend/build/
-
-# Misc
-.DS_Store
-*.pem
-
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Local env files
-.env
+# Secrets
 backend/.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-frontend/.env.local
-
-# Vercel
-.vercel
-
-# TypeScript
-*.tsbuildinfo
-next-env.d.ts
 
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-backend/venv/
-backend/.venv/
+*.pyo
+.venv/
 *.egg-info/
 dist/
 build/
 
-# IDE
+# Local dev data
+backend/data/
+
+# Node / Next.js
+node_modules/
+# Ignore full .next build cache but keep the standalone output for Keboola deployment
+frontend/.next/*
+!frontend/.next/standalone/
+!frontend/.next/standalone/**
+!frontend/.next/static/
+!frontend/.next/static/**
+frontend/out/
+frontend/.env*.local
+*.tsbuildinfo
+
+# Test results
+frontend/test-results/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
 .vscode/
 .idea/
 *.swp
@@ -60,8 +44,3 @@ build/
 
 # Screenshots
 *.png
-
-# Package locks (generated on install)
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
